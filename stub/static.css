@@ -1,0 +1,424 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+a{text-decoration: none;}
+* { font-family: 'Ubuntu', 'Nanum Gothic', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
+body { background:#f7fcfe url(./bg_bottom.png) repeat-x fixed bottom; }
+table.ranking_table {
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+    border:0;
+}
+table.ranking_table thead {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    background: #60b0e7;
+}
+table.ranking_table thead th {
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #fff;
+}
+table.ranking_table tbody th {
+    padding: 3px;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+    background: #fcf1f4;
+}
+table.ranking_table tbody tr {
+    cursor:pointer;
+}
+table.ranking_table td {
+    vertical-align: middle;
+    padding: 3px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.ranking_table ._ranking_nickname img {
+    float:left; margin-right: 3px;
+
+}
+
+.clearfix.text_r { display:none; }
+button.a_link {     background:none!important;
+     color:inherit;
+     border:none; 
+     padding:0!important;
+     font: inherit;
+     /*border is optional*/
+     border-bottom:1px solid #444; 
+     cursor: pointer;}
+
+
+.result_icon_block3 { text-align:right; }
+.result_icon_block3.text_c { text-align: left; }
+.result_icon_block3.f_l {float:right; }
+hr{
+    border:0;
+    border-top:1px solid #ccc
+}
+.badge{
+    text-align:center;
+    margin:0 auto;
+    display:block
+}
+.stat{
+    border:4px solid #007bbb;
+    border-radius:4px;
+    background-color:#f7fcfe;
+    padding:10px;
+    width:593px
+}
+.lastlog{
+    border:4px solid #007bbb;
+    border-radius:4px;
+    background-color:#f7fcfe;
+    padding:0;
+    width:587px;
+    margin:0 auto
+}
+.lastlog h3{
+    border:1px solid #000
+}
+.lastlog .playlog_expert{
+    color:red
+}
+h3{
+    font-size:small;
+    margin:0;
+    padding:10px;
+    cursor:pointer;
+    color:#fff;
+    border-top:1px solid #eae5e3;
+    border-left:1px solid #eae5e3;
+    border-right:1px solid #eae5e3;
+    background:#0095d9;
+    text-align:left;
+    position:relative
+}
+h3.off{
+    font-size:small;
+    margin:0;
+    padding:10px 10px;
+    cursor:pointer;
+    color:#fff;
+    border-top:1px solid #eae5e3;
+    border-left:1px solid #eae5e3;
+    border-right:1px solid #eae5e3;
+    background:#999;
+    text-align:left
+}
+ul.list{
+    color:#000;
+    margin:0;
+    list-style:none;
+    padding:5px 5px;
+    list-style:none;
+    border-top:1px solid #eae5e3;
+    border-left:1px solid #eae5e3;
+    border-right:1px solid #eae5e3;
+    background:#dcdcdc;
+    text-align:left
+}
+ul.list>li{
+    background:#fff;
+    padding:0 5px;
+    overflow:hidden
+}
+ul.list li a:hover{
+    background:#fff
+}
+dl{
+    padding:0;
+    margin-bottom:0
+}
+dt{
+    font-size:small;
+    margin:0;
+    padding:10px 10px;
+    cursor:pointer;
+    color:#f7fcfe;
+    border-top:1px solid #eae5e3;
+    border-left:1px solid #eae5e3;
+    border-right:1px solid #eae5e3;
+    background:#0095d9
+}
+dd{
+    line-height:1.8em;
+    color:#0d0015;
+    margin:0;
+    list-style:none;
+    display:block;
+    padding:10px 0 5px 10px;
+    list-style:none;
+    border-top:1px solid #eae5e3;
+    border-left:1px solid #eae5e3;
+    border-right:1px solid #eae5e3;
+    background:#f7fcfe;
+    text-align:left
+}
+.result_icon_block3:nth-child(odd){
+    float:right
+}
+.lastlog.a{
+    font-size:small;
+    margin:0;
+    padding:10px 0 10px 10px;
+    cursor:pointer;
+    color:#fff;
+    border-top:1px solid #eae5e3;
+    border-left:1px solid #eae5e3;
+    border-right:1px solid #eae5e3;
+    background:#0095d9;
+    text-align:left;
+    position:relative
+}
+.lastlog.a.off{
+    font-size:small;
+    margin:0;
+    padding:10px 10px;
+    cursor:pointer;
+    color:#fff;
+    border-top:1px solid #eae5e3;
+    border-left:1px solid #eae5e3;
+    border-right:1px solid #eae5e3;
+    background:#999;
+    text-align:left
+}
+.main{
+    width:275px;
+    padding:10px
+}
+.achievement{
+    color:#c3f0ff;
+    font-size:1.2rem;
+    padding:3px 10px;
+    vertical-align:bottom
+}
+.playdata_music_title{
+    display:block;
+    width:100%;
+    font-weight:700;
+    font-size:1.4rem;
+    color:#000;
+    margin:0 auto 5px auto;
+    padding:0
+}
+ul.openopen{
+    display:block
+}
+.friend_info{
+    margin:10px;
+    text-align:left
+}
+.friend_info td{
+    vertical-align:top;
+    color:#fff
+}
+.friend_box{
+    margin:10px 0;
+    padding:10px 10px 0 10px;
+    border:2px solid #aaa;
+    border-radius:5px;
+    background:#fff
+}
+.favorite_btn{
+    width:120px;
+    margin:10px 0 5px 0;
+    padding:3px;
+    border:1px solid #c39;
+    background:#f8f;
+    color:#fff;
+    border-radius:3px;
+    box-shadow:2px 2px 2px rgba(0,0,0,.25);
+    -moz-box-shadow:2px 2px 2px rgba(0,0,0,.25);
+    -webkit-box-shadow:2px 2px 2px rgba(0,0,0,.25)
+}
+.release_btn{
+    width:120px;
+    margin:10px 0 5px 0;
+    padding:3px;
+    border:1px solid #2b5f9a;
+    background:#4a9fff;
+    color:#fff;
+    border-radius:3px;
+    box-shadow:2px 2px 2px rgba(0,0,0,.25);
+    -moz-box-shadow:2px 2px 2px rgba(0,0,0,.25);
+    -webkit-box-shadow:2px 2px 2px rgba(0,0,0,.25)
+}
+.vs_select_btn{
+    width:120px;
+    height:30px;
+    line-height:15px;
+    margin:10px 20px;
+    padding:5px;
+    background:#d60ca5;
+    color:#fff;
+    border-radius:3px
+}
+.btn_off{
+    background:#aaa
+}
+.vs_btn{
+    margin:10px 0 5px 0
+}
+.vs_select{
+    display:block;
+    width:70%;
+    height:30px;
+    margin:15px auto
+}
+.friend_vs_block{
+    display:block;
+    width:420px;
+    height:auto;
+    margin:0 auto 10px auto;
+    padding:0;
+    position:relative;
+    background:url(../img/bg_friend_vs.png) no-repeat;
+    background-size:100%;
+    box-shadow:3px 3px 0 rgba(0,0,0,.2);
+    border:2px #000 solid;
+    border-radius:5px;
+    text-align:center
+}
+@media only screen and (max-width:439px){
+    .friend_vs_block{
+        position:relative
+    }
+}
+.friend_vs_result{
+    display:block;
+    margin:11px auto 0 auto;
+    padding:10px;
+    position:relative;
+    font-weight:700
+}
+.friend_vs_infoblock{
+    display:table-cell;
+    width:150px;
+    height:auto;
+    margin:0 auto;
+    padding:0;
+    color:#FFF;
+    text-align:center
+}
+.friend_vs_name{
+    display:block;
+    width:150px;
+    height:auto;
+    margin:15px auto 1px auto;
+    padding:0;
+    color:#FFF;
+    line-height:100%;
+    text-align:center
+}
+.friend_vs_chara{
+    display:block;
+    background-position:center 0;
+    background-repeat:no-repeat;
+    background-size:100%;
+    margin:0 auto;
+    text-align:left;
+    width:89px;
+    height:86px;
+    padding:9px 8px 8px 11px
+}
+.friend_vs_resulticon{
+    display:table-cell;
+    width:98px;
+    height:auto;
+    margin:0;
+    padding:0;
+    position:relative;
+    text-align:center;
+    vertical-align:middle
+}
+.friend_vs_resulticon_img{
+    display:table-cell;
+    width:420px;
+    height:48px;
+    margin:0;
+    padding:0;
+    position:absolute;
+    background-size:100%;
+    text-align:center;
+    bottom:-34px;
+    left:-160px
+}
+.vs_result_record{
+    display:block;
+    width:200px;
+    height:28px;
+    margin:25px auto 3px auto;
+    padding:0;
+    font-weight:700;
+    line-height:28px;
+    text-align:center
+}
+.vs_user_score{
+    width:30%;
+    background:#fff;
+    border-radius:5px;
+    border:1px solid #000;
+    color:#000
+}
+.vs_result_score{
+    background:#000;
+    border-radius:5px
+}
+.vs_result_score>.result_WIN{
+    color:#ffed00
+}
+.vs_result_score>.result_DRAW{
+    color:#6cf3e0
+}
+.vs_result_score>.result_LOSE{
+    color:#e8e8e8
+}
+.vs_result_score>.score_WIN,.vs_result_score>.score_DRAW{
+    color:#50bcee
+}
+.vs_result_score>.score_LOSE{
+    color:#fe616a
+}
+.vs_result_icon_block{
+    padding:3px 0 0 0;
+    height:22px
+}
+.vs_result_icon_block img{
+    height:25px;
+    margin-right:5px
+}
+.playlog_easy{
+    color:#4169E1;
+    font-size:small
+}
+.playlog_basic{
+    color:#00FF7F;
+    font-size:small
+}
+.playlog_advanced{
+    color:tomato;
+    font-size:small
+}
+.playlog_expert{
+    color:#DC143C;
+    font-size:small
+}
+.playlog_master{
+    color:#9370DB;
+    font-size:small
+}
+.playlog_remaster{
+    color:#9370DB;
+    font-size:small
+}
+.playlog_utage{
+    color:#FF83CC;
+    font-size:small
+}
+
+a{text-decoration: none;}
+
