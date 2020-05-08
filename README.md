@@ -2,13 +2,13 @@
 
 
 
-View maimai status & share your maiami status. You can see TOP 50 rankings on the mail page
+View maimai status & share your maiami status. You can see TOP 50 rankings on the main page
 
-The development ended aws soon as maimai DX has been officially shut down. Databases has been dropped on the day of shutdown.
+The development ended as soon as maimai DX has officially shut down. Database was dropped on the day of shutdown.
 
 The password encryption/decryption module has been stripped for license issues.
 
-Please use it for a reference (The code is very dirty, I wouldn't really recommend it though)
+Please use it as a reference. The code is very dirty, I wouldn't really recommend to take it as a reference though.
 
 
 
